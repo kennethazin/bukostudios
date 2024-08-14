@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <main className=" min-h-screen flex flex-col justify-between items-center  p-2</div>4">
+    <main className=" min-h-screen flex flex-col justify-between items-center  p-20">
       <div className="flex justify-between gap-20 flex-wrap mt-20">
-        <header className="text-8xl tracking-[-0.15em]">
+        <header className="text-8xl tracking-[-0.11em] ">
           witespace studios
         </header>
         <svg
@@ -21,8 +21,8 @@ export default function Home() {
         </svg>
       </div>
       <div className="flex gap-10 text-3xl font-extralight flex-wrap justify-around m-auto">
-        <a>[info]</a>
-        <a>[work]</a>
+        <a href="/info">[info]</a>
+        <a href="/work">[work]</a>
         <a>[inquiry]</a>
         <a href="/about">[about]</a>
       </div>

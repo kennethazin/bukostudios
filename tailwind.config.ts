@@ -14,11 +14,10 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
         "xl": "1200px",
         "lg": "900px",
         "md": "700px",
-        "sm": "100px",
+        "sm": "400",
       },
     },
     extend: {
@@ -75,6 +74,9 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      fontFamily: {
+        sans: ['SF Pro', 'sans-serif'],
       },
     },
   },
