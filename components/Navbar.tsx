@@ -5,7 +5,15 @@ import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import PropTypes from "prop-types"; // ES6
 
+const isPath = [
+  { path: "/info", label: "info" },
+  { path: "/work", label: "work" },
+  { path: "/inquiry", label: "inquiry" },
+  { path: "/about", label: "about" },
+];
 export default function Navbar() {
+  const currentPath = usePathname();
+
   return (
     <header className="flex h-16 w-full items-center justify-between bg-background px-4 sticky top-0">
       <Link
@@ -17,34 +25,18 @@ export default function Navbar() {
         <span className="text-4xl tracking-[-0.12em]">witespace studios</span>
       </Link>
       <nav className="hidden items-center gap-10 md:flex font-extralight">
-        <Link
-          href="/info"
-          className="text-s  transition-colors hover:text-primary"
-          prefetch={false}
-        >
-          [info]
-        </Link>
-        <Link
-          href="/work"
-          className="text-s  transition-colors hover:text-primary"
-          prefetch={false}
-        >
-          [work]
-        </Link>
-        <Link
-          href="/inquiry"
-          className="text-s  transition-colors hover:text-primary"
-          prefetch={false}
-        >
-          [inquiry]
-        </Link>
-        <Link
-          href="/about"
-          className="text-s  transition-colors hover:text-primary"
-          prefetch={false}
-        >
-          [about]
-        </Link>
+        {isPath.map(({ path, label }) => (
+          <Link
+            key={path}
+            href={path}
+            className={`text-s transition-colors hover:text-primary ${
+              currentPath === path ? "underline" : ""
+            }`}
+            prefetch={false}
+          >
+            [{label}]
+          </Link>
+        ))}
       </nav>
       <Sheet>
         <SheetTrigger asChild>
@@ -58,34 +50,18 @@ export default function Navbar() {
             <span className="text-2xl tracking-[-0.12em] font-medium">
               witespace studios
             </span>
-            <Link
-              href="/info"
-              className="text-s  transition-colors hover:text-primary"
-              prefetch={false}
-            >
-              [info]
-            </Link>
-            <Link
-              href="/work"
-              className="text-s  transition-colors hover:text-primary"
-              prefetch={false}
-            >
-              [work]
-            </Link>
-            <Link
-              href="/inquiry"
-              className="text-s  transition-colors hover:text-primary"
-              prefetch={false}
-            >
-              [inquiry]
-            </Link>
-            <Link
-              href="/about"
-              className="text-s  transition-colors hover:text-primary"
-              prefetch={false}
-            >
-              [about]
-            </Link>
+            {isPath.map(({ path, label }) => (
+              <Link
+                key={path}
+                href={path}
+                className={`text-s transition-colors hover:text-primary ${
+                  currentPath === path ? "underline" : ""
+                }`}
+                prefetch={false}
+              >
+                [{label}]
+              </Link>
+            ))}
           </nav>
         </SheetContent>
       </Sheet>
