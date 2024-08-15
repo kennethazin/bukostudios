@@ -23,7 +23,7 @@ export default function Home() {
       <div className="flex gap-10 text-3xl font-extralight flex-wrap justify-around m-auto">
         <a href="/info">[info]</a>
         <a href="/work">[work]</a>
-        <a>[inquiry]</a>
+        <a href="/inquiry">[inquiry]</a>
         <a href="/about">[about]</a>
       </div>
       <footer className="font-extralight mt-auto ">

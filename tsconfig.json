@@ -27,6 +27,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "components/Navbar.jsx"
-  ],
+, "components/Form.jsx"  ],
   "exclude": ["node_modules"]
 }

@@ -52,9 +52,9 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="space-y-32 min-h-full">
+      <section className="space-y-32 min-h-full ">
         <h1 className=" font-light text-right mt-20">Connect with us</h1>
-        <div className="flex md:justify-between flex-wrap justify-center">
+        <div className="flex md:justify-between flex-wrap justify-center gap-7">
           <Ellipse
             href="https://www.instagram.com/witespacestudios"
             text={"[instagram]"}

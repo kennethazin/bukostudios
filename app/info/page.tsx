@@ -18,6 +18,7 @@ export default function Info() {
             <p>Landing pages</p>
             <p>Product websites</p>
             <p>Corporate websites</p>
+            <p>E-commerce websites</p>
           </div>
         </div>
 
@@ -38,7 +39,7 @@ export default function Info() {
           </h3>
         </div>
         <div className="mt-10">
-          <Ellipse href="/inquiry" text={"[enquire]"} />
+          <Ellipse href="/inquiry" text={"[go to inquiry form]"} />
         </div>
       </div>
     </section>
