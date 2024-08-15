@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "witespace-studios",
+  "private_key_id": "31925da81488adafb90665f0302a4f251f31523c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDPexf0m3wS9Zsp\nS6pu6IyiJJ+lNhY2hei+DGVVIIPpjD5Ab6IzWKBVhXdm4mHjaWpd1Hpb8E9XFFqp\nlhEM5c34BoFZO/08+pzQT3cl05Z8whY7nccJ/KelD1gKRzJRDxtH5nr2XZiTqXj0\nHOwCV6a0raQChuDD/9GOXESKkVwXuBdWnryzSpsX3qWIZhgRaZxiXqH5Veg4uKxF\n2MOW+LSVRoqPmEcPXiS1vIszW/MyEjuQyHlvBMnf/+F9E8ahMoK6l1PtCaTfWUi8\njdxZ7wLM99mg20PKjJ4iYpZDwqez7k/rrqhV6gDpf+XEyWSEa2QCbhdq5RiVXkFG\nvWcnGkXvAgMBAAECggEAEDhj1YwoRYUs9awELXqBsBVj47MYRnfui5kFfQO3PFVp\n8ninuhLmKflurbzqATDXD3HShQiC82BUfCiOua7njMnZZ+QANrmy87garPrfK26y\n9UMu8dFuO8G41MjfHqYrMFJM76C+kmCv44m1S7OVhU+D4Gyx+rCvrcz50MlvZS0r\nnElm5oOh57somjHDZTlZcGGqpvpP9W2fHn90ELnPjmTkg1eHuHoz8K/JUjugVt4U\nkD3VnPZ0hort1D7jNSi3Ydytng/kNdS9rv9H4yrlcj8/StUVbM1a6QCDsE/y0Wci\n2DX17+EJKItClKnh2NCP2tOYH8IbT+yjzxh2H8VIFQKBgQDt5U7lpwy9LHgEHxOa\nU8JR7WoMDSFOuwoQ9rsPtxlhtTTFF1Hk3gwqxWFbfDzob4gurBO0PsHsYhH5X7j6\neEXebUWV4ZGJA88c8ovMoLEzmsmfzDDxikxJn5C0iy6O3dfx+dTkSlx0WHqYGtwr\nOJi4wCaJwbfHScwSDd1+7uiuWwKBgQDfRT3LAp8hIWLEOE/9B4pta+GfNYg4eGG0\n9eX80NBYSUzPhraA+KNGXf6y/+YtYvVnykeAkhDf/YT1uLzVM4vBhzOjk20AtwrI\nS5I+XooNMku6kFF4GxZyuPYsIPmryxJ7dQuzA8jbTwUY51YmzIocL/HQf156/XoQ\ndNhZ7h/C/QKBgFVVL5vI9BTXYqV30DxHVyi0FJoGC7CF/vJeznKwpvYZXbhkyQdj\nbtHYwzdhtSda+mpjZx38dOspsnDVGTEe+1DxuUguBVo0d5JWnjbkXSu5liEvyU6a\n4Qp3phxc4HJ2uQMfLnJFCizhn/f3ioomXwHGSwyW5CkkG4NOXekuIWCJAoGBAIMZ\nk0krRukbQ3VYY4996AiMOjVUJ6KQ/T5WzS8AJfZRRCrvPSbJ2IWvF6lfnXa1Dshc\n/FNAcWw03ueyDB9cXwnKK8Y3AOBUmp410a+Rr5pEGDd6Gnxd23aNqO8Mhc4cNcQM\nXExHQp+T7LhMzkeF/urCNElrIL0zLYOQOKHFsxy5AoGAaeNp1lk/hsUIY18924OT\nQGum5BhEt4mrnbypnUSuvJbVxpcHtrokF8+xpBmA0h97DRVSTXbb7t6qDMRecqPo\nij8EyysGlVROJgb6b0Friej06FY3tth0na/ulgDFL/GagwmOAXUMrXvs57M8mSFZ\nGuOpUk3vdGxbkr63TUsIqOI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "kenneth-john-ras@witespace-studios.iam.gserviceaccount.com",
+  "client_id": "103537967523935392266",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kenneth-john-ras%40witespace-studios.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

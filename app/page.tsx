@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main className=" min-h-screen flex flex-col justify-between items-center  p-20">
-      <div className="flex justify-between gap-20 flex-wrap mt-20">
+    <main className=" flex flex-col justify-between items-center min-h-screen ">
+      <div className="flex justify-between gap-20 flex-wrap md:flex-nowrap">
         <header className="text-8xl tracking-[-0.11em] ">
           witespace studios
         </header>
