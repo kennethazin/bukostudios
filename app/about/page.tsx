@@ -39,8 +39,8 @@ export default function About() {
             </div>
             <div className="flex-1 space-y-1">
               <div>
-                Stella is an interactive digital media graduate, and has a
-                creative flare with an eye for detail
+                Stella is a brand and visual designer with a background in
+                interactive digital media, and production design.
               </div>
             </div>
             <div className="flex-1 space-y-1 text-right">
@@ -60,7 +60,7 @@ export default function About() {
             text={"[instagram]"}
           />
           <Ellipse
-            href="https://www.instagram.com/witespacestudios"
+            href="https://www.linkedin.com/company/witespace-studios/"
             text={"[linkedin]"}
           />
         </div>

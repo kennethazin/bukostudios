@@ -25,10 +25,22 @@ export default function Info() {
         <div className="flex flex-col sm:flex-row  justify-between mt-28">
           <h4 className="font-light">Branding + identity</h4>
           <div className="text-left sm:text-right indent-16 sm:indent-0">
-            <p>Brand concept</p>
-            <p>Brand identity</p>
+            <p>Brand/visual identity</p>
+            <p>Brand strategy</p>
+            <p>Creative direction</p>
             <p>Research + moodboards</p>
             <p>Brand guidelines</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col sm:flex-row justify-between mt-28">
+          <h4 className="font-light">SEO Services</h4>
+          <div className="text-left sm:text-right indent-16 sm:indent-0">
+            <p>On-page SEO</p>
+            <p>Keyword Research</p>
+            <p>SEO Audits</p>
+            <p>Page speed</p>
+            <p>Mobile optimisation</p>
           </div>
         </div>
         <div className="flex flex-col space-y-7">

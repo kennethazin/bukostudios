@@ -5,8 +5,8 @@ import Ellipse from "@/components/Ellipse";
 
 export default function Form() {
   return (
-    <PopupButton id="pkfkVf7n" style={{ fontSize: 20 }} className="my-button">
-      <Ellipse text={"[click to get started!]"} />
+    <PopupButton id="pkfkVf7n">
+      <Ellipse text={"[click to get started]"} />
     </PopupButton>
   );
 }
