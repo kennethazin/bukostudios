@@ -1,6 +1,6 @@
-export default function Ellipse({ href, text, sx }) {
+export default function Ellipse({ href, text }) {
   return (
-    <div style={{ position: "relative", display: "inline-block", ...sx }}>
+    <div style={{ position: "relative", display: "inline-block" }}>
       <svg
         width="372"
         height="91"
