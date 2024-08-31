@@ -22,7 +22,9 @@ export default function Navbar() {
         prefetch={false}
       >
         <Logo className="h-20 w-20 flex p-5" />
-        <span className="text-4xl tracking-[-0.12em]">witespace studios</span>
+        <span className="text-4xl tracking-[-0.1em] font-medium">
+          witespace studios
+        </span>
       </Link>
       <nav className="hidden items-center gap-10 md:flex font-extralight">
         {isPath.map(({ path, label }) => (
