@@ -15,7 +15,7 @@ export default function Navbar() {
   const currentPath = usePathname();
 
   return (
-    <header className="flex h-16 w-full items-center justify-between bg-background px-4 sticky top-0">
+    <header className="flex h-16 w-full items-center justify-between bg-background px-4 sticky top-3">
       <Link
         href="/"
         className="flex items-center gap-2 text-lg font-semibold"
@@ -95,18 +95,15 @@ function MenuIcon(props: any) {
 function Logo(props: any) {
   return (
     <svg
-      {...props}
-      width="150"
-      height="150"
-      viewBox="0 0 216 238"
+      width="50"
+      height="50"
+      viewBox="0 0 510 510"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M169.582 235.029C165.05 238.968 158.199 237.509 154.737 232.603C152.148 228.934 149.35 225.361 146.341 221.9C116.395 187.451 72.6079 172.103 30.2711 176.879C15.5777 178.536 0.830296 168.13 0.830301 153.343L0.830299 37.9245C0.830299 31.217 3.91368 24.7973 9.55906 21.175C64.5858 -14.1321 138.628 -4.6741 182.791 46.13C231.306 101.941 225.393 186.514 169.582 235.029Z"
-        fill="#EBEBEB"
+        d="M255 0L262.669 164.478C264.76 209.341 300.659 245.24 345.522 247.331L510 255L345.522 262.669C300.659 264.76 264.761 300.659 262.669 345.522L255 510L247.331 345.522C245.24 300.659 209.341 264.761 164.478 262.669L0 255L164.478 247.331C209.341 245.24 245.24 209.341 247.331 164.478L255 0Z"
+        fill="white"
       />
     </svg>
   );
