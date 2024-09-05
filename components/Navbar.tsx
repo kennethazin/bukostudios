@@ -31,7 +31,7 @@ export default function Navbar() {
           <Link
             key={path}
             href={path}
-            className={`text-s transition-colors hover:text-primary ${
+            className={`text-s transition-colors hover:text-primary hover:bg-white hover:text-black  ${
               currentPath === path ? "underline" : ""
             }`}
             prefetch={false}
