@@ -1,4 +1,17 @@
+"use client";
+import { useEffect } from "react";
+import gsap from "gsap";
+
 export default function Home() {
+  useEffect(() => {
+    gsap.to("#spinning-svg", {
+      rotation: 360,
+      repeat: -1,
+      duration: 5,
+      ease: "linear",
+    });
+  }, []);
+
   return (
     <main className=" flex flex-col justify-between items-center min-h-screen p-10 md:pb-20">
       <div className="flex justify-between gap-20 flex-wrap md:flex-nowrap">
@@ -6,6 +19,7 @@ export default function Home() {
           witespace studios
         </header>
         <svg
+          id="spinning-svg"
           width="150"
           height="150"
           viewBox="0 0 510 510"
