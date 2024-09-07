@@ -1,14 +1,14 @@
 ---
 title: "Website or social media?"
 excerpt: "Many businesses solely use social media as their main form of brand awareness. I explore why a website should be used in addition to it."
-coverImage: "/assets/blog/why-bother-a-website/hero.png"
+coverImage: "/assets/blog/why-bother-a-website/hero.webp"
 date: "2024-09-07"
 author:
   name: Kenneth John Ras
   picture: "/assets/blog/authors/kennethras.jpg"
   role: Co-founder, Web designer
 ogImage:
-  url: "/assets/blog/why-bother-a-website/hero.png"
+  url: "/assets/blog/why-bother-a-website/hero.webp"
 ---
 
 Many businesses rely primarily on social media platforms to represent their brand. However, without consistent and active engagement on these platforms, generating significant interest can be challenging. Attracting attention often requires innovative, expressive, or entertaining content, which may not align with every brand or business model. While social media is effective for generating initial interest, compelling and well-crafted messaging is crucial. It's important to note that relying solely on social media is unlikely to enable a business to reach its full potential.
