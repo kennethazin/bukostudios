@@ -1,6 +1,6 @@
 ---
 title: "Social Media vs. Websites"
-excerpt: "In the age of Instagram stories and TikTok trends, it's tempting to think that a strong social media presence is all your business needs to thrive online. The truth is: while social media can grab attention, it's your website that closes the deal."
+excerpt: "It's tempting to think that a strong social media presence is all your business needs to thrive online. The truth is: while social media can grab attention, it's your website that closes the deal."
 coverImage: "/assets/blog/social-media-vs-websites/hero.webp"
 date: "2024-09-07"
 author:
