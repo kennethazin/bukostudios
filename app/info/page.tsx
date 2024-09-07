@@ -9,7 +9,7 @@ export default function Info() {
         through our websites.
       </h2>
       <div>
-        <h2 className="underline my-20">Our services</h2>
+        <h2 className="my-20">Our services</h2>
 
         <div className="flex flex-col sm:flex-row justify-between">
           <h4 className="font-light">The digital experience</h4>

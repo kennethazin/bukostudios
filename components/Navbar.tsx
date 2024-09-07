@@ -10,6 +10,7 @@ const isPath = [
   { path: "/work", label: "work" },
   { path: "/inquiry", label: "inquiry" },
   { path: "/about", label: "about" },
+  { path: "/blog", label: "blog" },
 ];
 export default function Navbar() {
   const currentPath = usePathname();
@@ -18,7 +19,7 @@ export default function Navbar() {
     <header className="flex h-16 w-full items-center justify-between bg-background px-4 sticky top-0">
       <Link
         href="/"
-        className="flex items-center gap-2 text-lg font-semibold"
+        className="flex items-center text-lg font-semibold"
         prefetch={false}
       >
         <Logo className="h-20 w-20 flex p-5" />
@@ -26,12 +27,12 @@ export default function Navbar() {
           witespace studios
         </span>
       </Link>
-      <nav className="hidden items-center gap-10 md:flex font-extralight">
+      <nav className="hidden items-center  md:flex font-extralight">
         {isPath.map(({ path, label }) => (
           <Link
             key={path}
             href={path}
-            className={`text-s transition-colors hover:text-black hover:bg-white  ${
+            className={`text-s transition-colors hover:text-neutral-400 py-1 px-2  ${
               currentPath === path ? "underline" : ""
             }`}
             prefetch={false}
@@ -56,7 +57,7 @@ export default function Navbar() {
               <Link
                 key={path}
                 href={path}
-                className={`text-s transition-colors hover:text-primary ${
+                className={`text-s transition-colors hover:text-neutral-400 ${
                   currentPath === path ? "underline" : ""
                 }`}
                 prefetch={false}
