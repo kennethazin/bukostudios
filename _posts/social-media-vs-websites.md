@@ -8,7 +8,7 @@ author:
   picture: "/assets/blog/authors/kennethras.jpg"
   role: Co-founder, Web designer
 ogImage:
-  url: "/assets/blog/why-bother-a-website/hero.webp"
+  url: "/assets/blog/social-media-vs-websites/hero.webp"
 ---
 
 Let's talk about why your business needs a website, even in this age of social media.
