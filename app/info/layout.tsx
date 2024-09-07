@@ -15,11 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <>
-        <Navbar />
-        <div className="mt-32 xl:mx-60 lg:mx-48 md:mx-28 sm:mx-16 mx-5 font-sans ">
-          {children}
-        </div>
-        <Footer />
+      <Navbar />
+      <div className="mt-32 xl:mx-60 lg:mx-48 md:mx-28 sm:mx-16 mx-5">
+        {children}
+      </div>
+      <Footer />
     </>
   );
 }
