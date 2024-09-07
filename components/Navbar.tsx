@@ -10,6 +10,8 @@ const isPath = [
   { path: "/work", label: "work" },
   { path: "/inquiry", label: "inquiry" },
   { path: "/about", label: "about" },
+  { path: "/blog", label: "blog" },
+
 ];
 export default function Navbar() {
   const currentPath = usePathname();
