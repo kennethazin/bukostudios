@@ -1,7 +1,7 @@
 ---
 title: "Social Media vs. Websites"
 excerpt: "It's tempting to think that a strong social media presence is all your business needs to thrive online. The truth is: while social media can grab attention, it's your website that closes the deal."
-coverImage: "/assets/blog/social-media-vs-websites/hero.webp"
+coverImage: "/assets/blog/social-media-vs-websites/hero.png"
 date: "2024-09-07"
 author:
   name: Kenneth John Ras
@@ -9,7 +9,7 @@ author:
   role: Co-founder, Web designer
   link: https://www.linkedin.com/in/kenneth-john-ras-327423200
 ogImage:
-  url: "/assets/blog/social-media-vs-websites/hero.webp"
+  url: "/assets/blog/social-media-vs-websites/hero.png"
 ---
 
 Many businesses rely on social media to get their name out there. It's free, it's popular, and everyone's doing it. Unless you're constantly posting and engaging with your audience, it's hard to make a real impact. You might need to be disruptive, expressive or entertaining with your posts to get attention - and that might not fit your brand/business.
