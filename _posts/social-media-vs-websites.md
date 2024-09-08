@@ -7,6 +7,7 @@ author:
   name: Kenneth John Ras
   picture: "/assets/blog/authors/kennethras.jpg"
   role: Co-founder, Web designer
+  link: https://www.linkedin.com/in/kenneth-john-ras-327423200
 ogImage:
   url: "/assets/blog/social-media-vs-websites/hero.webp"
 ---

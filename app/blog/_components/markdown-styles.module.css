@@ -16,3 +16,26 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug font-normal;
 }
+
+/* Add styles for lists using "-" */
+.markdown ul {
+  @apply list-disc pl-6;
+}
+
+.markdown ul li {
+  @apply mb-2;
+}
+
+/* Add styles for blockquotes using ">" */
+.markdown blockquote {
+  @apply border-l-4 border-gray-300 pl-4 italic text-[#6E6E6E] ml-10;
+}
+
+/* Add styles for numbered lists */
+.markdown ol {
+  @apply list-decimal pl-6;
+}
+
+.markdown ol li {
+  @apply mb-2;
+}

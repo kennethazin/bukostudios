@@ -89,5 +89,5 @@ h4 {
 }
 
 p {
-  @apply text-base md:text-lg lg:text-xl font-light;
+  @apply text-base md:text-lg lg:text-lg font-light;
 }
