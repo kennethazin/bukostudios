@@ -1,5 +1,10 @@
 import React from "react";
 import Ellipse from "@/components/Ellipse";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 export default function About() {
   return (
@@ -13,10 +18,19 @@ export default function About() {
         <div className="flex flex-col space-y-4 text-md md:text-lg lg:text-xl  font-extralight gap-20">
           <div className="flex">
             <div className="flex-1  md:text-xl lg:text-2xl font-light text-left">
-              <div>Kenneth Ras</div>
-              <div>Founder,</div>
-              <div>Designer,</div>
-              <div>Developer</div>
+              <Popover>
+                <PopoverTrigger>
+                  <div className="text-left">
+                    <div>Kenneth Ras</div>
+                    <div>Founder,</div>
+                    <div>Designer,</div>
+                    <div>Developer</div>
+                  </div>
+                </PopoverTrigger>
+                <PopoverContent>
+                  Place content for the popover here.
+                </PopoverContent>
+              </Popover>
             </div>
             <div className="flex-1 space-y-1 ">
               <div>
