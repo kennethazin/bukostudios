@@ -1,6 +1,6 @@
 ---
 title: "SEO: Made Simple"
-excerpt: "It's tempting to think that a strong social media presence is all your business needs to thrive online. The truth is: while social media can grab attention, it's your website that closes the deal."
+excerpt: "Your simple guide to SEO, outlining its main principles and importance as well as practical advice on how you can get started today!"
 coverImage: "/assets/blog/seo-made-simple/hero.png"
 date: "2024-09-08"
 author:
