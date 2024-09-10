@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "witespace studios - about",
-  description: "Website for witespice studios web design agency",
+  description: "About page: Learn more about us!",
 };
 
 export default function RootLayout({
@@ -15,11 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <>
-        <Navbar />
-        <div className="mt-32 xl:mx-60 lg:mx-48 md:mx-28 sm:mx-16 mx-5">
-          {children}
-        </div>
-        <Footer />
+      <Navbar />
+      <div className="mt-32 xl:mx-60 lg:mx-48 md:mx-28 sm:mx-16 mx-5">
+        {children}
+      </div>
+      <Footer />
     </>
   );
 }

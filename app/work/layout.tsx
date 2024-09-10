@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "witespace studios - work",
-  description: "Website for witespice studios web design agency",
+  description: "Works page for Witespace Studios design agency",
 };
 export default function RootLayout({
   children,

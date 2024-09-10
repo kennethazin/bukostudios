@@ -4,7 +4,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "witespace studios - home",
-  description: "Website for witespice studios web design agency",
+  description: "Home page for Witespace Studios design agency",
 };
 
 export default function RootLayout({
