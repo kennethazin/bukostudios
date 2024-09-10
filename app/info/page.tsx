@@ -5,9 +5,9 @@ export default function Info() {
     <section className="space-y-7 min-h-screen">
       <h1 className="text-right mb-20">Work with us</h1>
       <h2>
-        We are a boutique studio crafting end-to-end digital brand experiences
-        by combining design and development to create your website & brand
-        identity.
+        We are a boutique web design studio crafting end-to-end digital brand
+        experiences by combining design and development to create your website &
+        brand identity.
       </h2>
       <div>
         <h3 className="my-20">Our services</h3>
