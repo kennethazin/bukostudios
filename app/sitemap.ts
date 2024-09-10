@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: "https://witespacestudio.com/works",
+      url: "https://witespacestudio.com/work",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
