@@ -1,5 +1,5 @@
 .ellipse-container:hover .ellipse-svg ellipse {
-  fill: #6e6e6e;
+  fill: #e1e1e1;
   border-width: "20px";
 }
 
@@ -12,5 +12,5 @@
 }
 
 .ellipse-container:hover .ellipse-link {
-  color: white;
+  color: black;
 }
