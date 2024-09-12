@@ -4,8 +4,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "witespace studios - about",
-  description: "About page: Learn more about us!",
+  title: "Witespace Studios — About Us",
+  description: "Learn more about us",
 };
 
 export default function RootLayout({

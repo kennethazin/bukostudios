@@ -3,8 +3,9 @@ import "./globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
-  title: "witespace studios - home",
-  description: "Home page for Witespace Studios design agency",
+  title: "Web Design | Digital Design Agency | Witespace Studios",
+  description:
+    "We build creative brand experiences through branding & websites",
 };
 
 export default function RootLayout({
