@@ -1,4 +1,5 @@
-import Ellipse from "@/components/Ellipse";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Info() {
   return (
@@ -45,15 +46,18 @@ export default function Info() {
           </div>
         </div>
         <div className="flex flex-col space-y-7">
-          <h1 className="text-left mt-48">Interested with working with us?</h1>
+          <h1 className="text-left mt-40">Interested with working with us?</h1>
           <h3 className="text-left ">
             We will evaluate the project scope and share a detailed proposal
             after our first consultation call.
           </h3>
         </div>
-        <div className="mt-10">
-          <Ellipse href="/inquiry" text={"[go to inquiry form]"} />
-        </div>
+        <Link href="/inquiry" prefetch={false}>
+          <button className="mt-10 px-8 py-2 hover:-translate-y-2 rounded-md bg-[--ellipse-fill] text-[--text-color-hover] font-base transition duration-200 hover:bg-[--ellipse-fill] hover:text-[--text-color-hover] border-transparent flex items-center space-x-2">
+            <span>FILL OUT INQUIRY FORM</span>
+            <ArrowRight />
+          </button>
+        </Link>
       </div>
     </section>
   );
