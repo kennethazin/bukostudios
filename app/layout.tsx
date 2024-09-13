@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
   title: "Web Design | Digital Design Agency | Witespace Studios",
@@ -15,9 +16,18 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <html lang="en" className="dark">
+      <html lang="en" suppressHydrationWarning>
         <GoogleTagManager gtmId="G-W3JQJVQXRF" />
-        <body>{children}</body>
+        <body className="bg-background">
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </body>
       </html>
     </>
   );

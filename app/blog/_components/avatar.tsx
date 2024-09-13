@@ -41,7 +41,7 @@ const Avatar = ({ name, picture, role, link }: Props) => {
 
       <div className="flex flex-col">
         <div className="font-base text-md">{name}</div>
-        <div className="font-light text-neutral-400">{role}</div>
+        <div className="font-light text-[--muted-text]">{role}</div>
       </div>
     </div>
   );

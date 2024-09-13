@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import PropTypes from "prop-types"; // ES6
+import { ModeToggle } from "@/components/modeToggle"
 
 const isPath = [
   { path: "/info", label: "info" },
@@ -32,7 +33,7 @@ export default function Navbar() {
           <Link
             key={path}
             href={path}
-            className={`text-s transition-colors hover:text-neutral-400 py-1 px-2  ${
+            className={`text-s transition-colors hover:text-neutral-400 py-1 px-2 ${
               currentPath === path ? "underline" : ""
             }`}
             prefetch={false}
@@ -40,6 +41,7 @@ export default function Navbar() {
             [{label}]
           </Link>
         ))}
+
       </nav>
       <Sheet>
         <SheetTrigger asChild>
@@ -50,9 +52,12 @@ export default function Navbar() {
         </SheetTrigger>
         <SheetContent side="right">
           <nav className="grid gap-4 p-4 font-extralight">
-            <span className="text-2xl tracking-[-0.12em] font-medium">
+            <div className="flex flex-row justify-between">
+            <span className="text-2xl tracking-[-0.12em] font-medium ">
               witespace studios
             </span>
+            </div>
+
             {isPath.map(({ path, label }) => (
               <Link
                 key={path}
@@ -94,18 +99,16 @@ function MenuIcon(props: any) {
 }
 
 function Logo(props: any) {
+  
   return (
     <svg
       width="50"
       height="50"
       viewBox="0 0 510 510"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      fill="var(--text-color)"
     >
-      <path
-        d="M255 0L262.669 164.478C264.76 209.341 300.659 245.24 345.522 247.331L510 255L345.522 262.669C300.659 264.76 264.761 300.659 262.669 345.522L255 510L247.331 345.522C245.24 300.659 209.341 264.761 164.478 262.669L0 255L164.478 247.331C209.341 245.24 245.24 209.341 247.331 164.478L255 0Z"
-        fill="white"
-      />
+      <path d="M255 0L262.669 164.478C264.76 209.341 300.659 245.24 345.522 247.331L510 255L345.522 262.669C300.659 264.76 264.761 300.659 262.669 345.522L255 510L247.331 345.522C245.24 300.659 209.341 264.761 164.478 262.669L0 255L164.478 247.331C209.341 245.24 245.24 209.341 247.331 164.478L255 0Z" />
     </svg>
   );
 }
