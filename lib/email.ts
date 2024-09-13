@@ -14,15 +14,30 @@ export const send = async (emailFormData: z.infer<typeof formSchema>) => {
     react: EmailTemplate({ firstName: emailFormData.firstName }),
   });
 
-  const { data: data2, error: error2 } = await resend.emails.send({
+  if (error) {
+    throw error;
+  }
+
+  const { data: responseData, error: sendError} = await resend.emails.send({
     from: `Witespace Studios <${process.env.RESEND_FROM_EMAIL}>`,
     to: ["kenneth@witespacestudios.com"], 
     subject: "New Lead Form Submission",
-    react: EmailTemplateFull({ formData: emailFormData }),
+    react: EmailTemplateFull({ 
+      firstName: emailFormData.firstName,
+      email: emailFormData.email,
+      businessName: emailFormData.businessName,
+      projectType: emailFormData.projectType,
+      strugglesOrNeeds: emailFormData.strugglesOrNeeds,
+      goals: emailFormData.goals,
+      estimatedBudget: emailFormData.estimatedBudget,
+      visualInspiration: emailFormData.visualInspiration,
+      startDate: emailFormData.startDate,
+      additionalInformation: emailFormData.additionalInformation,
+     }),
   });
 
   if (error) {
-    throw error;
+    throw sendError;
   }
 
 };
