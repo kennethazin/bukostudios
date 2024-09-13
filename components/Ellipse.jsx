@@ -1,5 +1,3 @@
-import "./Ellipse.css";
-
 export default function Ellipse({ href, text }) {
   return (
     <a href={href} target="_blank">
