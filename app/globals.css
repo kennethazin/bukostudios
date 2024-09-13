@@ -39,6 +39,8 @@ body {
     --ellipse-text: white;
     --ellipse-fill: black;
     --muted-text: #6E6E6E;
+    --muted-hex: #e3e3e3;
+
 
   }
 
@@ -72,6 +74,7 @@ body {
     --ellipse-text: black;
     --ellipse-fill: white;
     --muted-text: #C5C5C5;
+    --muted-hex: #474747;
   }
 }
 
@@ -125,4 +128,11 @@ p {
 
 .ellipse-container .ellipse-svg ellipse {
   fill: var(--ellipse-fill);
+}
+
+.ellipse-container:hover p{
+  color: var(--ellipse-fill);
+}
+.ellipse-container:hover .ellipse-svg ellipse {
+  fill: var(--muted-hex);
 }

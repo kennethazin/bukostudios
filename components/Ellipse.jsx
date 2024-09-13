@@ -2,8 +2,9 @@ import "./Ellipse.css";
 
 export default function Ellipse({ href, text }) {
   return (
+    <a href={href} target="_blank">
     <div
-      className="ellipse-container"
+      className="ellipse-container "
       style={{ position: "relative", display: "inline-block" }}
     >
       <svg
@@ -15,10 +16,7 @@ export default function Ellipse({ href, text }) {
       >
         <ellipse cx="186" cy="45.5" rx="186" ry="45.5" />
       </svg>
-      <a
-        href={href}
-        target="_blank"
-        class="ellipseText"
+      <div
         style={{
           position: "absolute",
           top: "50%",
@@ -27,8 +25,9 @@ export default function Ellipse({ href, text }) {
           textDecoration: "none",
         }}
       >
-        {text}
-      </a>
+        <p className="ellipseText ">{text}</p>
+      </div>
     </div>
+    </a>
   );
 }
