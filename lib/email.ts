@@ -2,7 +2,7 @@
 import { z } from "zod";
 import { formSchema } from "./schemas";
 import { Resend } from "resend";
-import { EmailTemplate} from "@/components/email-template";
+import { EmailTemplate, EmailTemplateFull} from "@/components/email-template";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -16,6 +16,28 @@ export const send = async (emailFormData: z.infer<typeof formSchema>) => {
 
   if (error) {
     throw error;
+  }
+
+  const { data: responseData, error: sendError} = await resend.emails.send({
+    from: `Witespace Studios <${process.env.RESEND_FROM_EMAIL}>`,
+    to: ["kenneth@witespacestudios.com"], 
+    subject: "New Lead Form Submission",
+    react: EmailTemplateFull({ 
+      firstName: emailFormData.firstName,
+      email: emailFormData.email,
+      businessName: emailFormData.businessName,
+      projectType: emailFormData.projectType,
+      strugglesOrNeeds: emailFormData.strugglesOrNeeds,
+      goals: emailFormData.goals,
+      estimatedBudget: emailFormData.estimatedBudget,
+      visualInspiration: emailFormData.visualInspiration,
+      startDate: emailFormData.startDate,
+      additionalInformation: emailFormData.additionalInformation,
+     }),
+  });
+
+  if (error) {
+    throw sendError;
   }
 
 };
