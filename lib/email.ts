@@ -19,7 +19,7 @@ export const send = async (emailFormData: z.infer<typeof formSchema>) => {
   }
 
   const { data: responseData, error: sendError} = await resend.emails.send({
-    from: `Witespace Studios <${process.env.RESEND_FROM_EMAIL}>`,
+    from: `Kenneth <${process.env.RESEND_FROM_EMAIL}>`,
     to: ["kenneth@witespacestudios.com"], 
     subject: "New Lead Form Submission",
     react: EmailTemplateFull({ 

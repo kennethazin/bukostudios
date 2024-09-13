@@ -39,6 +39,7 @@ export const EmailTemplateFull: React.FC<Readonly<EmailTemplateFullProps>> = ({
   startDate,
   additionalInformation,
 }) => (
+  
   <div>
     <h1>Form Submission Details</h1>
     <p><strong>First Name:</strong> {firstName}</p>
