@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { EmailTemplate, EmailTemplateFull } from "@/components/email-template";
 import { z } from "zod";
@@ -7,7 +7,7 @@ import { env } from "@/app/env";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(req: { method: string; json: () => any; }) {
+export async function POST(req: NextRequest) {
   if (req.method === 'POST') {
     try {
       const emailFormData = await req.json();
@@ -50,9 +50,9 @@ export async function POST(req: { method: string; json: () => any; }) {
         throw kennethError;
       }
 
-      return NextResponse.json({ userData, kennethData });
+      return NextResponse.json({ message: 'Emails sent successfully' });
     } catch (error) {
-      return NextResponse.json({ error: (error as Error).message }, { status: 400 });
+      return NextResponse.json({ error: error.message }, { status: 500 });
     }
   }
 
