@@ -1,5 +1,7 @@
 import { z } from "zod";
 
+const stringToDate = z.string().pipe(z.coerce.date());
+
 export const formSchema = z.object({
   firstName: z
     .string({
@@ -20,6 +22,6 @@ export const formSchema = z.object({
   goals: z.string().min(10).max(500), // Goals with a minimum and maximum length
   estimatedBudget: z.string().min(1).max(50), // Estimated budget as a string
   visualInspiration: z.string().max(500).optional(), // Visual inspiration as a URL
-  startDate: z.date(),
-  additionalInformation: z.string().min(10).max(500).optional(), // Additional information as an optional string
+  startDate: stringToDate,
+  additionalInformation: z.string().optional(), // Additional information as an optional string
 });

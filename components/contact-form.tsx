@@ -33,10 +33,8 @@ import { useForm } from "react-hook-form";
 import { date, z } from "zod";
 import { cn } from "@/lib/utils";
 import { formSchema } from "@/lib/schemas";
-import { send } from "@/lib/email";
 
 export function ContactForm() {
-  const [startDate, setStartDate] = useState<Date>();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -54,9 +52,39 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    send(values);
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch('/api/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+  
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to send email');
+      }
+  
+      const result = await response.json();
+      console.log('Emails sent successfully:', result);
+      form.reset({
+        firstName: "",
+        lastName: "",
+        email: "",
+        businessName: "",
+        projectType: "",
+        strugglesOrNeeds: "",
+        goals: "",
+        estimatedBudget: "",
+        visualInspiration: "",
+        startDate: undefined,
+        additionalInformation: "",
+      });    } catch (error) {
+      console.error('Error sending emails:', error);
+      // Handle error (e.g., show an error message to the user)
+    }
   }
 
   return (
