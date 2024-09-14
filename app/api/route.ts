@@ -50,9 +50,9 @@ export async function POST(req: NextRequest) {
         throw kennethError;
       }
 
-      return NextResponse.json({ message: 'Emails sent successfully' });
+      return NextResponse.json({ userData, kennethData });
     } catch (error) {
-      return NextResponse.json({ error: error.message }, { status: 500 });
+      return NextResponse.json({ error: (error as { message: string }).message }, { status: 500 });
     }
   }
 
