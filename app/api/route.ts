@@ -5,7 +5,7 @@ import { EmailTemplate, EmailTemplateFull } from "@/components/email-template";
 import { formSchema } from "@/lib/schemas";
 import { env } from "@/app/env";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_UTxvBqrU_Fg8MbjfygeBaCJybNMKq9zDw");
 
 export async function POST(req: NextRequest) {
   if (req.method === 'POST') {
@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
 
       // Send email to the user
       const { data: userData, error: userError } = await resend.emails.send({
-        from: `Witespace Studios <${env.RESEND_FROM_EMAIL}>`,
+        from: `Kenneth <kenneth@witespacestudios.com>`,
         to: [validatedData.email],
         subject: "Thanks for filling out the inquiry form",
         react: EmailTemplate({ firstName: validatedData.firstName }),
@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
 
       // Send email to Kenneth
       const { data: kennethData, error: kennethError } = await resend.emails.send({
-        from: `Kenneth <${env.RESEND_FROM_EMAIL}>`,
+        from: `Kenneth <kenneth@witespacestudios.com>`,
         to: ["kenneth@witespacestudios.com"],
         subject: "New Lead Form Submission",
         react: EmailTemplateFull({ 
