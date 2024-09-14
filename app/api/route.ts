@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { EmailTemplate, EmailTemplateFull } from "@/components/email-template";
-import { z } from "zod";
 import { formSchema } from "@/lib/schemas";
 import { env } from "@/app/env";
 

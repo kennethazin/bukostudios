@@ -35,7 +35,6 @@ import { cn } from "@/lib/utils";
 import { formSchema } from "@/lib/schemas";
 
 export function ContactForm() {
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
