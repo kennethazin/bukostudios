@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <>
       <Navbar />
-      <div className="mt-32 xl:mx-60 lg:mx-48 md:mx-28 sm:mx-16 mx-5">
+      <div className="mt-32 xl:mx-60 lg:mx-48 md:mx-28 sm:mx-16 mx-5 transition-all duration-200">
         {children}
       </div>
       <Footer />
