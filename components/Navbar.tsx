@@ -21,7 +21,6 @@ export default function Navbar() {
       <Link
         href="/"
         className="flex items-center text-lg font-semibold"
-        prefetch={false}
       >
         <Logo className="h-20 w-20 flex p-5" />
         <span className="text-4xl tracking-[-0.1em] font-medium">
@@ -36,7 +35,6 @@ export default function Navbar() {
             className={`text-s transition-colors hover:text-neutral-400 py-1 px-2 ${
               currentPath === path ? "underline" : ""
             }`}
-            prefetch={false}
           >
             [{label}]
           </Link>
@@ -65,7 +63,6 @@ export default function Navbar() {
                 className={`text-s transition-colors hover:text-neutral-400 ${
                   currentPath === path ? "underline" : ""
                 }`}
-                prefetch={false}
               >
                 [{label}]
               </Link>

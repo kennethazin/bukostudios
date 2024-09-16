@@ -3,7 +3,6 @@ import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { EmailTemplate, EmailTemplateFull } from "@/components/email-template";
 import { formSchema } from "@/lib/schemas";
-import { env } from "@/app/env";
 
 const resend = new Resend("re_UTxvBqrU_Fg8MbjfygeBaCJybNMKq9zDw");
 
@@ -28,7 +27,7 @@ export async function POST(req: NextRequest) {
       }
 
       // Send email to Kenneth
-      const { data: kennethData, error: kennethError } = await resend.emails.send({
+      const { data: witespaceData, error: witespaceError } = await resend.emails.send({
         from: `Kenneth <kenneth@witespacestudios.com>`,
         to: ["kenneth@witespacestudios.com"],
         subject: "New Lead Form Submission",
@@ -46,11 +45,11 @@ export async function POST(req: NextRequest) {
         }),
       });
 
-      if (kennethError) {
-        throw kennethError;
+      if (witespaceError) {
+        throw witespaceError;
       }
 
-      return NextResponse.json({ userData, kennethData });
+      return NextResponse.json({ userData, witespaceData });
     } catch (error) {
       return NextResponse.json({ error: (error as { message: string }).message }, { status: 500 });
     }

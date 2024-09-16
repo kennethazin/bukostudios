@@ -88,7 +88,7 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-full   md:w-3/5 lg:w-1/2">
         <div className="space-y-6">
           <div>
             <FormField

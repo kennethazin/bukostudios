@@ -5,38 +5,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: "https://witespacestudios.com",
       lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 1,
     },
     {
       url: "https://witespacestudios.com/info",
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
     {
       url: "https://witespacestudios.com/about",
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
     {
       url: "https://witespacestudios.com/work",
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
     {
       url: "https://witespacestudios.com/inquiry",
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
     {
       url: "https://witespacestudios.com/blog",
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.5,
     },
   ];
 }
