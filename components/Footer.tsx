@@ -4,10 +4,10 @@ import { Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="font-extralight flex  m-0 md:[m-12] pt-20 pl-5 pb-5 w-full">
+    <footer className="font-extralight flex  m-0 md:[m-12] pt-20 pl-5 pb-5 w-full hover:text[--muted-text]">
       <div className="flex flex-col">
         <a href="mailto:witespacestudios@gmail.com">
-        email:&nbsp;witespacestudios@gmail.com
+        email:&nbsp;<span className="underline hover:text[--muted-text]">witespacestudios@gmail.com</span>
         </a>
       <span>@ 2024 witespace studios</span>
       <div className="flex flex-row gap-4 mt-5"> 
