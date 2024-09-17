@@ -338,7 +338,7 @@ export function ContactForm() {
           </div>
         </div>
 
-        <button className="mt-10 px-8 py-2 hover:-translate-y-2 rounded-md bg-[--ellipse-fill] text-[--text-color-hover] font-base transition duration-200 hover:bg-[--ellipse-fill] border-transparent" onClick={() => onSubmit(form.getValues())}>
+        <button className="mt-10 px-8 py-2 hover:-translate-y-1 rounded-md bg-[--ellipse-fill] text-[--text-color-hover] font-base transition duration-200 hover:bg-[--ellipse-fill] border-transparent" onClick={() => onSubmit(form.getValues())}>
           SUBMIT
         </button>
       </form>

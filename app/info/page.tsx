@@ -53,7 +53,7 @@ export default function Info() {
           </h3>
         </div>
         <Link href="/inquiry">
-          <button className="mt-10 px-8 py-2 hover:-translate-y-2 rounded-md bg-[--ellipse-fill] text-[--text-color-hover] font-base transition duration-200 hover:bg-[--ellipse-fill] hover:text-[--text-color-hover] border-transparent flex items-center space-x-2">
+          <button className="mt-10 px-8 py-2 hover:-translate-y-1 rounded-md bg-[--ellipse-fill] text-[--text-color-hover] font-base transition duration-200 hover:bg-[--ellipse-fill] hover:text-[--text-color-hover] border-transparent flex items-center space-x-2">
             <span>FILL OUT INQUIRY FORM</span>
             <ArrowRight />
           </button>

@@ -2,7 +2,7 @@ export default function Ellipse({ href, text }) {
   return (
     <a href={href} target="_blank">
     <div
-      className="ellipse-container "
+      className="ellipse-container"
       style={{ position: "relative", display: "inline-block" }}
     >
       <svg
