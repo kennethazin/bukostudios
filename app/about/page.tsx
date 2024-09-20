@@ -14,7 +14,7 @@ export default function About() {
         <div className="flex flex-col space-y-4 text-md md:text-lg lg:text-xl  font-extralight gap-20">
           <div className="flex">
             <div className="flex-1  md:text-xl lg:text-2xl font-light text-left hover:text-muted-foreground">
-              <a href="www.linkedin.com/in/kenneth-john-ras-327423200">
+              <a href="https://www.linkedin.com/in/kenneth-john-ras-327423200" target="_blank">
               <div>Kenneth Ras</div> 
               <div>Founder,</div>
               <div>Designer,</div>
@@ -37,7 +37,7 @@ export default function About() {
           </div>
           <div className="flex">
             <div className="flex-1  md:text-xl lg:text-2xl font-light text-left hover:text-muted-foreground">
-              <a href="https://www.linkedin.com/in/stella-malone-7ba616251">
+              <a href="https://www.linkedin.com/in/stella-malone-7ba616251" target="_blank">
               <div>Stella Malone</div>
               <div>Creative Director,</div>
               <div>Brand Designer</div>
