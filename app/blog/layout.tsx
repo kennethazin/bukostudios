@@ -6,7 +6,7 @@ import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Witespace Studios — Blog`,
-  description: `A curated list of articles about everything web dev, design and tech`,
+  description: `A curated list of articles about everything web dev, design and tech. Web design in Dublin.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },

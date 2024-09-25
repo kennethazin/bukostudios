@@ -4,9 +4,9 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
-  title: "Web Design | Digital Design Agency | Witespace Studios",
+  title: "Web Design in Dublin | Digital Design Agency | Witespace Studios",
   description:
-    "We build creative brand experiences through branding & websites",
+    "We are a web design agency based in Dublin which bring brand experiences through branding & websites",
 };
 
 export default function RootLayout({

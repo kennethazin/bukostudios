@@ -6,7 +6,7 @@ export default function Info() {
     <section className="space-y-7 min-h-screen">
       <h1 className="text-right mb-20">Work with us</h1>
       <h2>
-        We are a boutique web design studio crafting end-to-end digital brand
+        We are a web design studio based in Dublin, crafting end-to-end digital brand
         experiences by combining design and development to create your website &
         brand identity.
       </h2>
