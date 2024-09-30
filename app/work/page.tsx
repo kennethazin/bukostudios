@@ -1,4 +1,8 @@
 import Image from "next/image";
+import eastcityiphone from "@/public/assets/eastcity/iphone.webp";
+import eastcityipad from "@/public/assets/eastcity/ipad.webp";
+import eastcitydesktop from "@/public/assets/eastcity/desktop.webp";
+
 
 export default function Work() {
   return (
@@ -12,11 +16,12 @@ export default function Work() {
       <div className="flex flex-col gap-y-5">
         <a href="https://eastcity.framer.website">
           <Image
-            src="/assets/eastcity/ipad.webp"
+            src={eastcityipad}
             width={2000}
             height={4000}
             alt="East City iPad Mockup"
             className=" hover:opacity-80"
+            placeholder="blur"
           />
           <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
             <span className="text-white text-lg">East City iPad Mockup</span>
@@ -24,20 +29,24 @@ export default function Work() {
         </a>
         <a href="https://eastcity.framer.website">
           <Image
-            src="/assets/eastcity/iphone.webp"
+            src={eastcityiphone}
             width={5184}
             height={3456}
             alt="East City iPad Mockup"
             className="hover:opacity-80"
+            placeholder="blur"
+
           />
         </a>
         <a href="https://eastcity.framer.website">
           <Image
-            src="/assets/eastcity/desktop.webp"
+            src={eastcitydesktop}
             width={5184}
             height={3456}
             alt="East City iPad Mockup"
             className="hover:opacity-80"
+            placeholder="blur"
+
           />
         </a>
       </div>
