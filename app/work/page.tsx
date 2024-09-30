@@ -21,7 +21,7 @@ export default function Work() {
             height={4000}
             alt="East City iPad Mockup"
             className=" hover:opacity-80"
-            placeholder="blur"
+
           />
           <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
             <span className="text-white text-lg">East City iPad Mockup</span>
@@ -34,7 +34,7 @@ export default function Work() {
             height={3456}
             alt="East City iPad Mockup"
             className="hover:opacity-80"
-            placeholder="blur"
+
 
           />
         </a>
@@ -45,7 +45,7 @@ export default function Work() {
             height={3456}
             alt="East City iPad Mockup"
             className="hover:opacity-80"
-            placeholder="blur"
+
 
           />
         </a>
