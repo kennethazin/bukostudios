@@ -137,3 +137,7 @@ p {
 .ellipse-container:hover .ellipse-svg ellipse {
   fill: var(--muted-hex);
 }
+
+.pill {
+  border-color: var(--text-color);
+}

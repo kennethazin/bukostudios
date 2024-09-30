@@ -9,7 +9,7 @@ export default function Work() {
     <section className="min-h-screen justify-center items-center w-full">
       <div className="flex flex-col gap-3 mb-5">
         <h1 className="uppercase tracking-tighter font-bold">East City</h1>
-        <div className="border border-black w-fit border- py-1 px-3 rounded-3xl font-light text-base">
+        <div className="border pill w-fit border- py-1 px-3 rounded-3xl font-light text-base">
           Web design & development
         </div>
       </div>
