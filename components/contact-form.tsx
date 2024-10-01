@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Label } from "@/components/ui/label";
+
 import { CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
 import { Calendar } from "@/components/ui/calendar";
@@ -33,6 +33,7 @@ import { useForm } from "react-hook-form";
 import { date, z } from "zod";
 import { cn } from "@/lib/utils";
 import { formSchema } from "@/lib/schemas";
+import { toast } from "sonner"
 
 export function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
@@ -67,6 +68,15 @@ export function ContactForm() {
       }
   
       const result = await response.json();
+      const promise = () => new Promise((resolve) => setTimeout(resolve, 4000));
+
+      toast.promise(promise, {
+        loading: 'Sending...',
+        success: () => {
+          return `We've received your message and will respond within 48 hours`;
+        },
+        error: 'Uh oh. Your message failed to send.',
+      });      
       console.log('Emails sent successfully:', result);
       form.reset({
         firstName: "",
@@ -82,6 +92,8 @@ export function ContactForm() {
         additionalInformation: "",
       });    } catch (error) {
       console.error('Error sending emails:', error);
+      toast.error("Your message failed to send")
+
       // Handle error (e.g., show an error message to the user)
     }
   }
