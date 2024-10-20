@@ -17,10 +17,10 @@ export const formSchema = z.object({
     })
     .email(),
   businessName: z.string().min(2).max(100),
-  projectType: z.array(z.string().min(1).max(50)),
+  projectType: z.string().min(2).max(100),
   strugglesOrNeeds: z.string().min(10).max(500),
   goals: z.string().min(10).max(500), // Goals with a minimum and maximum length
-  estimatedBudget: z.array(z.string().min(1).max(50)), // Estimated budget as an array of strings
+  estimatedBudget: z.string().min(1).max(50), // Estimated budget as a string
   visualInspiration: z.string().max(500).optional(), // Visual inspiration as a URL
   startDate: z.coerce.date(),
   additionalInformation: z.string().optional(), // Additional information as an optional string
