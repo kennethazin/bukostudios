@@ -90,11 +90,11 @@ export function ContactForm() {
         visualInspiration: "",
         startDate: undefined,
         additionalInformation: "",
-      });    } catch (error) {
-      console.error('Error sending emails:', error);
-      toast.error("Your message failed to send")
+        });
+      } catch (error) {
+        console.error('Error sending emails:', error);
+      }
 
-      // Handle error (e.g., show an error message to the user)
     }
   }
 
