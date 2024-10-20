@@ -90,11 +90,9 @@ export function ContactForm() {
         visualInspiration: "",
         startDate: undefined,
         additionalInformation: "",
-        });
-      } catch (error) {
-        console.error('Error sending emails:', error);
-      }
-
+      });    } catch (error) {
+        console.error('Error sending emails:', error)
+      // Handle error (e.g., show an error message to the user)
     }
   }
 
