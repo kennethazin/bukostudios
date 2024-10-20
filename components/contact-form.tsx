@@ -72,8 +72,8 @@ export function ContactForm() {
 
       toast.promise(promise(), {
         loading: 'Sending...',
-        success: 'We&apos;ve received your message and will respond within 48 hours',
-        error: 'Uh oh. Your message failed to send.',
+        success: "We've received your message and will respond within 48 hours",
+        error: "Uh oh. Your message failed to send.",
       });      
       console.log('Emails sent successfully:', result);
       form.reset({
