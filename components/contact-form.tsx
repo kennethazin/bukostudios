@@ -70,11 +70,9 @@ export function ContactForm() {
       const result = await response.json();
       const promise = () => new Promise((resolve) => setTimeout(resolve, 4000));
 
-      toast.promise(promise, {
+      toast.promise(promise(), {
         loading: 'Sending...',
-        success: () => {
-          return `We've received your message and will respond within 48 hours`;
-        },
+        success: 'We&apos;ve received your message and will respond within 48 hours',
         error: 'Uh oh. Your message failed to send.',
       });      
       console.log('Emails sent successfully:', result);
@@ -91,7 +89,9 @@ export function ContactForm() {
         startDate: undefined,
         additionalInformation: "",
       });    } catch (error) {
-        console.error('Error sending emails:', error)
+      console.error('Error sending emails:', error);
+
+
       // Handle error (e.g., show an error message to the user)
     }
   }
