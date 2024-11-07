@@ -18,7 +18,7 @@ export default function Home() {
       <div className="flex justify-between gap-20 flex-wrap md:flex-nowrap transition-all duration-200">
         <div>
         <h1 className="text-8xl tracking-[-0.11em] mt-5 mb-5 ">
-          witespace studios
+          kosu studios
         </h1>
         </div>
         <svg
@@ -48,7 +48,7 @@ export default function Home() {
         </a>
       </div>
       <footer className="font-extralight mt-auto ">
-        @ 2024 witespace studios
+        @ 2024 kosu studios
       </footer>
     </main>
   );

@@ -24,7 +24,7 @@ export default function Navbar() {
       >
         <Logo className="h-20 w-20 flex p-5" />
         <span className="text-4xl tracking-[-0.1em] font-medium">
-          witespace studios
+          kosu studios
         </span>
       </Link>
       <nav className="hidden items-center  md:flex font-extralight">
@@ -52,7 +52,7 @@ export default function Navbar() {
           <nav className="grid gap-4 p-4 font-extralight">
             <div className="flex flex-row justify-between">
             <span className="text-2xl tracking-[-0.12em] font-medium ">
-              witespace studios
+              kosu studios
             </span>
             </div>
 

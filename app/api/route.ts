@@ -4,7 +4,7 @@ import { Resend } from 'resend';
 import { EmailTemplate, EmailTemplateFull } from "@/components/email-template";
 import { formSchema } from "@/lib/schemas";
 
-const resend = new Resend("re_UTxvBqrU_Fg8MbjfygeBaCJybNMKq9zDw");
+const resend = new Resend("re_CcZZwDBT_88qfZ7tjNte8LGDetbhd5NFk");
 
 export async function POST(req: NextRequest) {
   if (req.method === 'POST') {
