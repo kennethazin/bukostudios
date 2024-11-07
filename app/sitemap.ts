@@ -1,54 +1,23 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: "https://www.witespacestudios.com",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-        {
-      url: "https://www.witespacestudios.com/",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://www.witespacestudios.com/404",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://www.witespacestudios.com/info",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://www.witespacestudios.com/about",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://www.witespacestudios.com/work",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://www.witespacestudios.com/inquiry",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://www.witespacestudios.com/blog",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
+  const baseUrl = "https://www.witespacestudios.com/";
+  
+  const routes = [
+    "",  // home page
+    "404",
+    "info",
+    "about",
+    "work",
+    "inquiry",
+    "blog"
   ];
+
+  // Map routes to full sitemap entries
+  return routes.map((route) => ({
+    url: `${baseUrl}${route}`.replace(/\/$/, ""),  
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8
+  }));
 }
