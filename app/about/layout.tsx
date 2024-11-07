@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Kosu Studios — About Us",
+  title: "Witespace Studios — About Us",
   description: "Learn more about us. Web design in Dublin.",
 };
 
