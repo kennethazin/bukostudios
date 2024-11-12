@@ -61,7 +61,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
       lineHeight: '1.5',
       marginBottom: '20px',
     }}>
-      Our team will carefully review your response. If we believe we're a good fit for each other, we'll reach out to you within the next 2-3 business days to set up a discovery call.
+      Our team will carefully review your response. If we believe we&apos;re a good fit for each other, we&apos;ll reach out to you within the next 2-3 business days to set up a discovery call.
     </p>
     <p style={{
       fontSize: '16px',
@@ -80,7 +80,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
         fontSize: '14px',
         margin: '0',
       }}>
-        <strong>Next steps:</strong> Keep an eye on your inbox. If we're a good match, we'll send you an invitation for a discovery call where we can discuss your project in more detail.
+        <strong>Next steps:</strong> Keep an eye on your inbox. If we&apos;re a good match, we&apos;ll send you an invitation for a discovery call where we can discuss your project in more detail.
       </p>
     </div>
     <p style={{
