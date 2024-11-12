@@ -26,14 +26,13 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     margin: '0 auto',
     padding: '20px',
     backgroundColor: '#ffffff',
-    color: '#333333',
+    color: '#0a0a0a',
   }}>
     <div style={{
       textAlign: 'center',
       marginBottom: '20px',
     }}>
       <h1 style={{
-        color: '#4a4a4a',
         fontSize: '24px',
         marginBottom: '10px',
       }}>Witespace Studios</h1>
@@ -45,7 +44,6 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
       }}></div>
     </div>
     <h2 style={{
-      color: '#4a4a4a',
       fontSize: '20px',
       marginBottom: '20px',
     }}>Hi, {firstName}!</h2>
@@ -94,7 +92,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
       marginTop: '30px',
       textAlign: 'center',
       fontSize: '14px',
-      color: '#888888',
+      color: '##636363',
     }}>
       <p>Witespace Studios | Crafting Digital Experiences</p>
       <p>
