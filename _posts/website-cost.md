@@ -4,7 +4,7 @@ excerpt: "Discover what influences website pricing and learn how to budget effec
 coverImage: "/assets/blog/website-cost/cost.jpg"
 date: "2024-09-08"
 author:
-    name: Stella Malone
+    name: Kenneth John Ras
     picture: "/assets/blog/authors/kennethras.jpg"
     role: Co-founder, Web designer
     link: https://www.linkedin.com/in/stella-malone-7ba616251/
