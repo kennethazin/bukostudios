@@ -13,7 +13,7 @@ export function FAQ() {
         <AccordionContent>
           We&apos;re a small team, but we celebrate and synthesise our complementary talents and perspectives. As a duo, we&apos;re
           resolute, yet kind, conceptual yet grounded. we believe that a powerful brand design starts with powerful strategy. Without a solid
-          strategic foundation, we&apos;re nothing. That&apos;s why we pay close attentoin to the incidental details, always asking: "Does this feel right?".
+          strategic foundation, we&apos;re nothing. That&apos;s why we pay close attentoin to the incidental details, always asking: <q>Does this feel right?</q>.
 
         </AccordionContent>
       </AccordionItem>
