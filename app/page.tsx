@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import "./styles.css";
+import { ModeToggle } from "@/components/modeToggle";
 
 export default function Home() {
   useEffect(() => {
@@ -47,8 +48,9 @@ export default function Home() {
           [about]
         </a>
       </div>
-      <footer className="font-extralight mt-auto ">
+      <footer className="font-extralight mt-auto flex-row flex items-center gap-2 ">
         @ 2024 witespace studios
+        <ModeToggle/>
       </footer>
     </main>
   );
