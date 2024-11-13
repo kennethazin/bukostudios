@@ -1,8 +1,10 @@
 import { ContactForm } from "@/components/contact-form";
+import {FAQ} from "@/components/faqs";
 
 export default function Inquiry() {
   return (
-    <section className="space-y-7">
+    <section >
+<div className="space-y-7">
       <h1 className="text-right">Inquiry</h1>
       <h2>
         Please fill out the project inquiry form. We will schedule a
@@ -12,6 +14,13 @@ export default function Inquiry() {
       <div className="align-left">
         <ContactForm />
       </div>
+      </div>
+
+<div className="space-y-7 mt-20">
+      <h1 className="text-right">FAQs</h1>
+      <FAQ />
+      </div>
+
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
+
 export default function Info() {
   return (
     <section className="space-y-7 min-h-screen">
