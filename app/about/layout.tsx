@@ -5,7 +5,8 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Witespace Studios — About Us",
-  description: "Learn more about us. Web design in Dublin.",
+  description: "Learn more about us. We are a web design studio based in Dublin, specializing in creating beautiful and functional websites for businesses of all sizes. Our team of experienced designers and developers is dedicated to delivering high-quality web solutions that meet your needs and exceed your expectations.",
+  keywords: ["web design", "Dublin", "web development", "business websites", "Witespace Studios"],
 };
 
 export default function RootLayout({

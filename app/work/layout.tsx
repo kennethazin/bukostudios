@@ -5,7 +5,8 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Witespace Studios — Work",
-  description: "Look at our latest projects",
+  description: "Look at our latest projects and see the quality and creativity we bring to every project we undertake. Our portfolio showcases a diverse range of work that highlights our expertise and commitment to excellence.",
+  keywords: ["Witespace Studios", "Projects", "Portfolio", "Creative Work", "Quality"],
 };
 export default function RootLayout({
   children,
