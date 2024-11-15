@@ -14,7 +14,7 @@ export default function Work() {
           <Badge>Development</Badge>
         </div>
         <div>
-          <p>"Asian Street Food, at the Heart of the City"</p>
+          <p>&apos;Asian Street Food, at the Heart of the City&apos;</p>
           <br />
           <p>
             We brought this brand message to life by crafting a modern and urban
