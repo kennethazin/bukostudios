@@ -35,9 +35,6 @@ export default function Work() {
             alt="East City iPad Mockup"
             className=" hover:opacity-80"
           />
-          <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
-            <span className="text-black text-lg">East City iPad Mockup</span>
-          </div>
         </a>
         <a href="https://eastcity.framer.website">
           <Image
