@@ -10,8 +10,8 @@ export default function Work() {
       <div className="flex flex-col gap-3 mb-5">
         <h1 className="uppercase tracking-tighter font-bold">East City</h1>
         <div className="space-x-3">
-          <Badge>Web design</Badge>
-          <Badge>Development</Badge>
+          <Badge className="font-normal">Web design</Badge>
+          <Badge className="font-normal">Development</Badge>
         </div>
         <div>
           <p>&apos;Asian Street Food, at the Heart of the City&apos;</p>
